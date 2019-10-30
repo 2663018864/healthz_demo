@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理系统</title>
+    <link rel="stylesheet" href="ElementUI/index.css">
+    <script src="ElementUI/vue.js"></script>
+    <script src="ElementUI/axios-0.18.0.js"></script>
+    <script src="ElementUI/index.js"></script>
+    <script src="js/emp.js"></script>
+
+
+
+</head>
+<body>
+    <div id="app">
+        <el-row>
+            <el-button type="primary" plain @click="dialogFormVisible = true">添加</el-button>
+        </el-row>
+        <el-table
+                :data="empList"
+                style="width: 100%"
+                stripe>
+            <el-table-column prop="id" label="序号"></el-table-column>
+            <el-table-column prop="name" label="姓名"></el-table-column>
+            <el-table-column prop="salary" label="工资"></el-table-column>
+            <el-table-column prop="birthday" label="生日"></el-table-column>
+            <el-table-column label="操作">
+                <template slot-scope="scope">
+                    <el-button-group>
+                        <el-button type="primary" icon="el-icon-edit" size="mini" @click="findOne(scope.row)"></el-button>
+                        <el-button type="primary" icon="el-icon-delete" size="mini" @click="delete(scope.row)"></el-button>
+                    </el-button-group>
+                </template>
+            </el-table-column>
+        </el-table>
+
+
+
+
+        <el-dialog title="添加员工信息" :visible.sync="dialogFormVisible" center="true">
+            <el-form :model="emp" :rules="rules" ref="addEmp">
+                <el-form-item label="姓名" :label-width="formLabelWidth" prop="name">
+                    <el-input v-model="emp.name" autocomplete="off"></el-input>
+                </el-form-item>
+                <el-form-item label="工资" :label-width="formLabelWidth" prop="salary">
+                    <el-input v-model="emp.salary" autocomplete="off"></el-input>
+                </el-form-item>
+                <el-form-item label="生日" :label-width="formLabelWidth" prop="birthday">
+                    <div class="block">
+                        <el-date-picker
+                                v-model="emp.birthday"
+                                type="date"
+                                placeholder="选择日期">
+                        </el-date-picker>
+                    </div>
+                </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+            </div>
+        </el-dialog>
+
+    </div>
+
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                emp:{},
+                empList:[],
+                dialogFormVisible: false,
+                formLabelWidth: '120px',
+                rules: {
+                    name: [
+                        { required: true, message: '请输入姓名', trigger: 'blur' },
+                        { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
+                    ],
+                    salary: [
+                        { required: true, message: '请输入工资', trigger: 'blur' }
+                    ],
+                    birthday: [
+                        { required: true, message: '请选择出生日期', trigger: 'change' }
+                    ]
+                }
+
+            },
+            methods:{
+                findAll:function () {
+                    var _this = this;
+                    axios.get("/emp/findAll.do").then(function (response) {
+                        _this.empList = response.data;
+                    }).catch(function () {
+
+                    });
+                },
+                findOne:function (id) {
+                    var _this = this;
+                    axios.get("/emp/findOne.do",{
+                        params:{
+                            id:id
+                        }
+                    }).then(function (response) {
+                        _this.emp = response.data;
+                        $("#myModal").modal("show");//让模态框显示
+                    });
+                },
+                save:function () {
+                    var _this = this;
+                    axios.post("/emp/save.do", _this.emp).then(function () {
+                        _this.findAll();
+                    });
+                },
+                update:function () {
+                    // alert("haha");
+                    // alert(this.emp);
+                    var _this = this;
+                    axios.post("/emp/update.do",_this.emp).then(function (response) {
+                        _this.findAll();
+                    }).catch((err)=>{
+
+                    });
+                },
+                delete:function (id) {
+                    var _this = this;
+                    axios.post("/emp/update.do",{"id":id}).then(function () {
+                        _this.findAll();
+                    });
+                }
+            },
+            created(){
+                this.findAll();
+            }
+        });
+
+
+    </script>
+
+
+</body>
+</html>

@@ -32,7 +32,7 @@
     </tx:advice>
 
     <aop:config proxy-target-class="true">
-        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.milo.service.impl.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.milo.Empserviceice.impl.*.*(..))"/>
     </aop:config>-->
 
 </beans>
