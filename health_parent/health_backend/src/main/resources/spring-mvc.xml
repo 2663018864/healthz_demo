@@ -16,7 +16,7 @@
     <!--配置应用名称-->
     <dubbo:application name="health_backend"/>
     <!--配置注册中心-->
-    <dubbo:registry address="zookeeper://192.168.220.128:2181"/>
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
     <!--配置包扫描-->
     <dubbo:annotation package="com.milo.controller"/>
     <!--启动时检查-->

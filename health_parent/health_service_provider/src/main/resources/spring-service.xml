@@ -16,7 +16,7 @@
     <!--配置应用名称-->
     <dubbo:application name="health_service_provider"/>
     <!--配置注册中心-->
-    <dubbo:registry address="zookeeper://192.168.220.128:2181"/>
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
     <!--配置协议-->
     <dubbo:protocol name="dubbo" port="20880"/>
     <!--扫描包-->
