@@ -55,7 +55,7 @@
                 <div class="box">
                     <div class="filter-container">
                         <el-input placeholder="编码/名称/助记码" v-model="pagination.queryString" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter"></el-input>
-                        <el-button @click="findPage()" class="dalfBut">查询</el-button>
+                        <el-button @click="pagination.currentPage = 1;findPage();" class="dalfBut">查询</el-button>
                         <el-button type="primary" class="butT" @click="handleCreate()">新建</el-button>
                     </div>
                     <el-table size="small" current-row-key="id" :data="dataList" stripe highlight-current-row>
@@ -69,6 +69,13 @@
                         </el-table-column>
                         <el-table-column prop="helpCode" label="助记码" align="center"></el-table-column>
                         <el-table-column prop="remark" label="说明" align="center"></el-table-column>
+                        <el-table-column label="检查项名称" align="center">
+                            <template slot-scope="scope">
+                                <span v-for="checkItem in scope.row.checkItems">
+                                    {{checkItem.name}},
+                                </span>
+                            </template>
+                        </el-table-column>
                         <el-table-column label="操作" align="center">
                             <template slot-scope="scope">
                                 <el-button type="primary" size="mini" @click="handleUpdate(scope.row)">编辑</el-button>
@@ -176,22 +183,22 @@
                             <template>
                                 <el-tabs v-model="activeName" type="card">
                                     <el-tab-pane label="基本信息" name="first">
-                                        <el-form label-position="right" label-width="100px">
+                                        <el-form ref="dataEditForm" :model="formData" :rules="rules" label-position="right" label-width="100px">
                                             <el-row>
                                                 <el-col :span="12">
-                                                    <el-form-item label="编码">
+                                                    <el-form-item label="编码" prop="code">
                                                         <el-input v-model="formData.code"/>
                                                     </el-form-item>
                                                 </el-col>
                                                 <el-col :span="12">
-                                                    <el-form-item label="名称">
+                                                    <el-form-item label="名称" prop="name">
                                                         <el-input v-model="formData.name"/>
                                                     </el-form-item>
                                                 </el-col>
                                             </el-row>
                                             <el-row>
                                                 <el-col :span="12">
-                                                    <el-form-item label="适用性别">
+                                                    <el-form-item label="适用性别" prop="sex">
                                                         <el-select v-model="formData.sex">
                                                             <el-option label="不限" value="0"></el-option>
                                                             <el-option label="男" value="1"></el-option>
@@ -200,7 +207,7 @@
                                                     </el-form-item>
                                                 </el-col>
                                                 <el-col :span="12">
-                                                    <el-form-item label="助记码">
+                                                    <el-form-item label="助记码" prop="helpCode">
                                                         <el-input v-model="formData.helpCode"/>
                                                     </el-form-item>
                                                 </el-col>
@@ -288,9 +295,49 @@
             methods: {
                 //编辑
                 handleEdit() {
+                    //校验表单
+                    this.$refs.dataEditForm.validate((validate) => {
+                        if (validate) {
+                            axios.post("/checkGroup/edit.do?checkitemIds="+this.checkitemIds, this.formData).then((res) => {
+                                if (res.data.flag) {
+                                    this.dialogFormVisible4Edit = false;
+                                }
+                                this.$message({
+                                    type:res.data.flag ? "success" : "error",
+                                    message:res.data.message
+                                });
+                            }).finally(() => {
+                                this.findPage();
+                            });
+                        } else {
+                            this.$message.error("数据不合法，请检查")
+                        }
+                    });
                 },
                 // 弹出编辑窗口
                 handleUpdate(row) {
+                    this.dialogFormVisible4Edit = true;
+                    this.activeName = 'first';
+                    //发送请求查询检查组的信息
+                    axios.get("/checkGroup/findOne.do?checkGroupId="+row.id).then((res) => {
+                        if (res.data.flag) {
+                            this.formData = res.data.data;
+                        }
+                        this.$message({
+                            type:res.data.flag ? "success" : "error",
+                            message:res.data.message
+                        });
+                    });
+                    //发送请求查询所有的checkitem
+                    axios.get("/checkItem/findAll.do").then((res) => {
+                        this.tableData = res.data;
+                        //发送请求查询检查组所属的checkitem
+                        axios.get("/checkGroup/findCheckitemIdsByCheckGroupId.do?checkGroupId="+row.id).then((res) => {
+                            this.checkitemIds = res.data;
+                        });
+                    });
+                    //清空表单校验
+                    this.$refs.dataEditForm.resetFields();
                 },
                 //添加
                 handleAdd () {
@@ -317,6 +364,8 @@
                 // 弹出添加窗口
                 handleCreate() {
                     this.dialogFormVisible = true;
+                    //弹出添加窗口是自动选中第一个选项卡
+                    this.activeName = 'first';
                     //发送异步请求，查询所有检查项
                     axios.get("/checkItem/findAll.do").then((res) => {
                         this.tableData = res.data;
@@ -330,12 +379,25 @@
                 },
                 //分页查询
                 findPage() {
+                    var params = {
+                        currentPage:this.pagination.currentPage,
+                        pageSize:this.pagination.pageSize,
+                        queryString:this.pagination.queryString
+                    };
+                    axios.post("/checkGroup/findPage.do", params).then((res) => {
+                        this.dataList = res.data.rows;
+                        this.pagination.total = res.data.total;
+                    }).catch((err) => {
+
+                    });
                 },
                 // 重置表单
                 resetForm() {
                 },
                 //切换页码
                 handleCurrentChange(currentPage) {
+                    this.pagination.currentPage = currentPage;
+                    this.findPage();
                 },
                 // 删除
                 handleDelete(row) {

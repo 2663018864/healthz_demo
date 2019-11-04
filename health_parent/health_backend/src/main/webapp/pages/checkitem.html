@@ -31,8 +31,8 @@
                         <el-button type="primary" class="butT" @click="handleCreate()">新建</el-button>
                         <el-button type="danger" class="butT" @click="delMul()" style="float: right; margin-right: 50px">批量删除</el-button>
                     </div>
-                    <el-table size="small" current-row-key="id" :data="dataList" @selection-change="changeFun"stripe highlight-current-row>
-                        <el-table-column type="selection" width="55" prop="id" :selectable='checkboxInit' @selection-change="changeFun"></el-table-column>
+                    <el-table size="small" current-row-key="id" :data="dataList" @selection-change="changeFun" stripe highlight-current-row>
+                        <el-table-column type="selection" width="55" @selection-change="changeFun"></el-table-column>
                         <el-table-column type="index" align="center" label="序号"></el-table-column>
                         <el-table-column prop="code" label="项目编码" align="center"></el-table-column>
                         <el-table-column prop="name" label="项目名称" align="center"></el-table-column>
@@ -358,6 +358,7 @@
                     for(var i = 0; i<val.length; i++){
                         this.checkItemIds[i] = val[i].id;
                     }
+                    alert(this.checkItemIds);
                 },
                 //删除多条
                 delMul(){

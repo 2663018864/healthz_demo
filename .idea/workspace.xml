@@ -2,12 +2,465 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce99c79b-635d-40fb-92ad-2cffa218c4b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/health_jobs_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/health_jobs_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_3_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_ecs_4_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_ram_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_sts_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_oss_aliyun_sdk_oss_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_jobs_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/SetmealController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/src/main/resources/spring-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/setmeal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/classes/com/milo/controller/CheckGroupController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/classes/com/milo/controller/CheckItemController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/classes/com/milo/controller/EmpController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/classes/com/milo/controller/SetmealController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/classes/spring-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/ElementUI/axios-0.18.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/ElementUI/emp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/ElementUI/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/ElementUI/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/ElementUI/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/ElementUI/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/classes/com/milo/controller/CheckGroupController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/classes/com/milo/controller/CheckItemController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/classes/com/milo/controller/EmpController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/classes/com/milo/controller/SetmealController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/classes/spring-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-core-3.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-ecs-4.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-ram-3.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-sts-3.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/aliyun-sdk-oss-3.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/curvesapi-1.03.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/druid-1.0.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/dubbo-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.47.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/gson-2.6.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/happy-dns-java-0.1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/health_common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/health_interface-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/httpclient-4.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/httpcore-4.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.12.1.GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/jdom-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/jedis-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/jersey-client-1.18.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/jersey-core-1.18.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/jettison-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/jline-0.9.94.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-0.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/mybatis-paginator-1.2.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/netty-3.2.5.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/netty-3.7.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/okhttp-3.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/okio-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-4.1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/poi-3.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-3.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-schemas-3.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/qiniu-java-sdk-7.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-aspects-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-context-support-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-jms-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-messaging-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-security-acl-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-security-config-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-security-taglibs-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-security-web-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-test-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/xmlbeans-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/zkclient-0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/lib/zookeeper-3.4.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/css/orderset(1).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/emp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/american-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/avatar04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/boxed-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/boxed-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/cirrus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/loginLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/logingBg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/mestro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/minilogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/paypal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/photo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/photo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/photo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/photo4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/pwd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/user1-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/user2-160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/user3-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/user4-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/user5-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/user6-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/user7-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/user8-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/img/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/js/axios-0.18.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/pages/checkgroup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/pages/checkitem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/pages/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/pages/setmeal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/plugins/elementui/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/plugins/elementui/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/plugins/elementui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/plugins/font-awesome/css/font-awesome.min(1).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/health_backend-1.0-SNAPSHOT/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/tomcat/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_backend/target/tomcat/logs/access_log.2019-11-04" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/constant/RedisConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/utils/ALiYunUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/src/main/resources/oss.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/constant/MessageConstant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/constant/RedisConstant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/domain/CheckGroup.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/domain/CheckItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/domain/Emp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/domain/Member.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/domain/Menu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/domain/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/domain/OrderSetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/domain/Permission.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/domain/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/domain/Setmeal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/domain/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/entity/PageResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/entity/QueryPageBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/entity/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/com/milo/utils/ALiYunUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/classes/oss.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/health_common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/SetmealService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_interface/target/classes/com/milo/CheckGroupService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_interface/target/classes/com/milo/CheckItemService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_interface/target/classes/com/milo/Empservice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_interface/target/classes/com/milo/SetmealService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_interface/target/health_interface-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_interface/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_interface/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_interface/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_interface/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/health_jobs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/src/main/java/com/milo/jobs/ClearnImgJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/src/main/resources/spring-jobs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/src/main/resources/spring-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/classes/com/milo/jobs/ClearnImgJob.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/classes/spring-jobs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/classes/spring-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/classes/com/milo/jobs/ClearnImgJob.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/classes/spring-jobs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/classes/spring-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-core-3.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-ecs-4.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-ram-3.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-sts-3.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/aliyun-sdk-oss-3.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/c3p0-0.9.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/curvesapi-1.03.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/druid-1.0.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/dubbo-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.47.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/gson-2.6.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/happy-dns-java-0.1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/health_common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/httpclient-4.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/httpcore-4.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.12.1.GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/jdom-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/jedis-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/jersey-client-1.18.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/jersey-core-1.18.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/jettison-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/jline-0.9.94.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-0.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/mybatis-paginator-1.2.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/netty-3.2.5.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/netty-3.7.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/okhttp-3.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/okio-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-4.1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/poi-3.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-3.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-schemas-3.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/qiniu-java-sdk-7.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/quartz-2.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/quartz-jobs-2.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-aspects-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-context-support-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-jms-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-messaging-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-security-acl-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-security-config-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-security-taglibs-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-security-web-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-test-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/xmlbeans-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/zkclient-0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/lib/zookeeper-3.4.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/health_jobs-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/tomcat/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_jobs/target/tomcat/logs/access_log.2019-11-04" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/dao/SetmealDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/SetmealServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/SetmealDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/dao/CheckGroupDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/dao/CheckGroupDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/dao/CheckItemDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/dao/CheckItemDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/dao/EmpDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/dao/EmpDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/dao/SetmealDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/dao/SetmealDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/service/impl/CheckGroupServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/service/impl/CheckItemServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/service/impl/EmpServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/service/impl/SetmealServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/spring-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/spring-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/spring-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/classes/spring-tx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/com/milo/dao/CheckGroupDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/com/milo/dao/CheckGroupDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/com/milo/dao/CheckItemDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/com/milo/dao/CheckItemDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/com/milo/dao/EmpDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/com/milo/dao/EmpDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/com/milo/dao/SetmealDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/com/milo/dao/SetmealDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/com/milo/service/impl/CheckGroupServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/com/milo/service/impl/CheckItemServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/com/milo/service/impl/EmpServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/com/milo/service/impl/SetmealServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/spring-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/spring-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/spring-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/classes/spring-tx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-core-3.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-ecs-4.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-ram-3.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-sts-3.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/aliyun-sdk-oss-3.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/curvesapi-1.03.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/druid-1.0.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/dubbo-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.47.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/gson-2.6.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/happy-dns-java-0.1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/health_common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/health_interface-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/httpclient-4.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/httpcore-4.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.12.1.GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/jdom-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/jedis-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/jersey-client-1.18.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/jersey-core-1.18.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/jettison-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/jline-0.9.94.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-0.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/mybatis-paginator-1.2.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/netty-3.2.5.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/netty-3.7.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/okhttp-3.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/okio-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-4.1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/poi-3.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-3.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-schemas-3.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/qiniu-java-sdk-7.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-aspects-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-context-support-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-jms-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-messaging-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-security-acl-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-security-config-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-security-taglibs-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-security-web-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-test-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/xmlbeans-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/zkclient-0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/lib/zookeeper-3.4.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/health_service_provider-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/tomcat/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_parent/health_service_provider/target/tomcat/logs/access_log.2019-11-04" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/health_backend_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/health_backend_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/health_service_provider_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/health_service_provider_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-tx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-tx.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_backend/health_backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_backend/health_backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/CheckGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/CheckGroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_backend/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_backend/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/checkgroup.html" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/checkgroup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/checkitem.html" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/checkitem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_common/health_common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_common/health_common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_interface/health_interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_interface/health_interface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/CheckGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/CheckGroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_parent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_service_provider/health_service_provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_service_provider/health_service_provider.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/dao/CheckGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/dao/CheckGroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/CheckGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/CheckGroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/CheckGroupDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/CheckGroupDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health_parent/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/health_parent/target/" />
@@ -15,11 +468,26 @@
     <ignored path="$PROJECT_DIR$/health_parent/health_interface/target/" />
     <ignored path="$PROJECT_DIR$/health_parent/health_service_provider/target/" />
     <ignored path="$PROJECT_DIR$/health_parent/health_backend/target/" />
+    <ignored path="$PROJECT_DIR$/health_parent/health_jobs/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -27,10 +495,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/CheckItemController.java">
+        <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/SetmealController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="27" />
+            <state relative-caret-position="203">
+              <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/CheckGroupServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2617#2618#0" expanded="true" />
+                <element signature="e#2663#2664#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/SetmealServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,18 +533,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/checkitem.html">
+        <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/setmeal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="248" column="63" lean-forward="true" selection-start-line="248" selection-start-column="63" selection-end-line="248" selection-end-column="63" />
+            <state relative-caret-position="314">
+              <caret line="253" column="38" selection-start-line="253" selection-start-column="38" selection-end-line="253" selection-end-column="38" />
+              <folding>
+                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75" />
           </provider>
         </entry>
       </file>
@@ -77,24 +567,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/health_parent/pom.xml" />
-        <option value="$PROJECT_DIR$/health_parent/health_common/pom.xml" />
-        <option value="$PROJECT_DIR$/health_parent/health_interface/pom.xml" />
-        <option value="$PROJECT_DIR$/health_parent/health_service_provider/pom.xml" />
-        <option value="$PROJECT_DIR$/health_parent/health_backend/pom.xml" />
-        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-tx.xml" />
-        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-dao.xml" />
-        <option value="$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/domain/Emp.java" />
-        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/dao/EmpDao.java" />
-        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/EmpMapper.xml" />
-        <option value="$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/service.java" />
         <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller.java" />
         <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/controller.java" />
-        <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/EmpServiceImpl.java" />
-        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-service.xml" />
         <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/EmpDao.xml" />
         <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/em.html" />
         <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/emp2.html" />
@@ -109,10 +585,39 @@
         <option value="$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/entity/Result.java" />
         <option value="$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/CheckItemService.java" />
         <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/dao/CheckItemDao.java" />
-        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/CheckItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/CheckItemDao.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/CheckItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/CheckItemController.java" />
         <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/checkitem.html" />
+        <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/checkgroup.html" />
+        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/CheckGroupDao.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/dao/CheckGroupDao.java" />
+        <option value="$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/CheckGroupService.java" />
+        <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/CheckGroupController.java" />
+        <option value="$PROJECT_DIR$/health_parent/pom.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/CheckGroupServiceImpl.java" />
+        <option value="$PROJECT_DIR$/health_parent/health_common/src/main/resources/oos.properties" />
+        <option value="$PROJECT_DIR$/health_parent/health_common/src/main/resources/oss.properties" />
+        <option value="$PROJECT_DIR$/health_parent/health_common/pom.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/utils/ALiYunUtils.java" />
+        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/SetmealDao" />
+        <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/resources/spring-redis.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/constant/RedisConstant.java" />
+        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-service.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-redis.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_jobs/pom.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_jobs/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_jobs/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_jobs/src/main/resources/spring-redis.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_jobs/src/main/resources/spring-jobs.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_jobs/src/main/java/com/milo/jobs/ClearnImgJob.java" />
+        <option value="$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/SetmealService.java" />
+        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/dao/SetmealDao.java" />
+        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/SetmealDao.xml" />
+        <option value="$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/SetmealServiceImpl.java" />
+        <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/SetmealController.java" />
+        <option value="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/setmeal.html" />
       </list>
     </option>
   </component>
@@ -157,7 +662,8 @@
     <option name="vmOptions" value="-Dfile.encoding=gb2312" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="175" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -169,7 +675,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,56 +691,13 @@
               <item name="health_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="health_demo" type="462c0819:PsiDirectoryNode" />
               <item name="health_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="health_backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="health_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="health_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="health_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="health_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="health_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="health_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="health_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="health_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="health_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="health_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="health_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="health_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="health_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="health_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="health_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="health_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="health_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="health_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="health_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="health_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="health_jobs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -246,7 +708,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -256,11 +718,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\health_demo\health_parent\health_backend\src\main\webapp\pages" />
       <recent name="D:\projects\health_demo\health_parent\health_backend\src\main\webapp" />
       <recent name="D:\projects\health_demo\health_parent\health_common\src\main\java\com\milo" />
       <recent name="D:\projects\health_demo\health_parent\health_common\src\main\java\com\milo\constant" />
       <recent name="D:\projects\health_demo\health_parent\health_common\src\main\java\com\milo\domain" />
-      <recent name="D:\projects\health_demo\health_parent\health_backend\src\main\webapp\ElementUI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\health_demo\health_parent\health_backend\src\main\webapp\js" />
@@ -294,7 +756,15 @@
       <workItem from="1572308638777" duration="26301000" />
       <workItem from="1572346211860" duration="1368000" />
       <workItem from="1572361491840" duration="2384000" />
-      <workItem from="1572395251127" duration="17778000" />
+      <workItem from="1572395251127" duration="21127000" />
+      <workItem from="1572481750272" duration="23350000" />
+      <workItem from="1572529979813" duration="5225000" />
+      <workItem from="1572594946978" duration="18357000" />
+      <workItem from="1572654498866" duration="24409000" />
+      <workItem from="1572705227156" duration="7883000" />
+      <workItem from="1572740971972" duration="23863000" />
+      <workItem from="1572793815890" duration="2760000" />
+      <workItem from="1572827527231" duration="9294000" />
     </task>
     <task id="LOCAL-00001" summary="添加health_demo">
       <created>1572246313482</created>
@@ -310,18 +780,31 @@
       <option name="project" value="LOCAL" />
       <updated>1572264711561</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="实现预约管理：实现添加检查项功能">
+      <created>1572437879831</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572437879831</updated>
+    </task>
+    <task id="LOCAL-00004" summary="实现预约管理：实现查询检查项，删除检查项，修改检查项，增加检查组功能">
+      <created>1572616852427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572616852427</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63930000" />
+    <option name="totallyTimeSpent" value="182420000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.269437" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976415" visible="true" weight="0.30093834" />
+      <window_info id="Structure" order="1" sideWeight="0.5023585" side_tool="true" weight="0.288874" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -331,7 +814,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39943343" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -342,6 +825,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -360,254 +844,39 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加health_demo" />
     <MESSAGE value="搭建项目环境（创建子模块，编写配置文件）" />
-    <option name="LAST_COMMIT_MESSAGE" value="搭建项目环境（创建子模块，编写配置文件）" />
+    <MESSAGE value="实现预约管理：实现添加检查项功能" />
+    <MESSAGE value="实现预约管理：实现查询检查项，删除检查项，修改检查项，增加检查组功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现预约管理：实现查询检查项，删除检查项，修改检查项，增加检查组功能" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/CheckItemServiceImpl.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/CheckItemController.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/CheckItemServiceImpl.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/health_parent/health_interface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-          <folding>
-            <element signature="e#1226#1242#0" expanded="true" />
-            <element signature="e#1280#1293#0" expanded="true" />
-            <element signature="e#1336#1354#0" expanded="true" />
-            <element signature="e#1397#1415#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1622">
-          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE-sources.jar!/org/springframework/web/filter/CharacterEncodingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.47/fastjson-1.2.47.jar!/com/alibaba/fastjson/serializer/SerializerFeature.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="254" column="46" lean-forward="true" selection-start-line="254" selection-start-column="46" selection-end-line="254" selection-end-column="46" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/Empservice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/dao/EmpDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/EmpServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/ElementUI/vue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/ElementUI/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6225" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/ElementUI/axios-0.18.0.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/ElementUI/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#164060#164199#2" expanded="true" />
-            <element signature="e#166482#166621#2" expanded="true" />
-            <element signature="e#170010#170149#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-975" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/em.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/emp2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="505" column="133" selection-start-line="505" selection-start-column="133" selection-end-line="505" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/ElementUI/emp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1075">
-          <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/js/emp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="51" column="5" selection-start-line="1" selection-start-column="3" selection-end-line="51" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/domain/Emp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/domain/CheckGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/domain/OrderSetting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/domain/Permission.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -620,57 +889,10 @@
         <state relative-caret-position="-150" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/emp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/CheckItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/CheckItemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/EmpDao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="107" lean-forward="true" selection-end-line="1" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/dao/CheckItemDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-tx.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/CheckItemDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -691,32 +913,370 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/entity/Result.java">
+    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="-4186" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/CheckItemController.java">
+    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/emp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="2525">
+          <caret line="119" column="40" lean-forward="true" selection-start-line="119" selection-start-column="40" selection-end-line="119" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/domain/CheckItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/dao/CheckItemDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/CheckItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2263#2264#0" expanded="true" />
+            <element signature="e#2309#2310#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+            <element signature="e#2408#2409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/CheckItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/main.html">
+    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/domain/CheckGroup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75" />
+        <state relative-caret-position="150">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/entity/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/checkitem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="248" column="63" lean-forward="true" selection-start-line="248" selection-start-column="63" selection-end-line="248" selection-end-column="63" />
+        <state relative-caret-position="125">
+          <caret line="65" column="71" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="71" />
+          <folding>
+            <element signature="n#style#0;n#el-button#2;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/CheckItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1069">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/CheckGroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2540#2541#0" expanded="true" />
+            <element signature="e#2579#2580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/resources/oss.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/CheckGroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="243" column="8" selection-start-line="243" selection-start-column="8" selection-end-line="247" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/checkgroup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="300" column="51" selection-start-line="300" selection-start-column="40" selection-end-line="300" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/utils/ALiYunUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/domain/Setmeal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="19" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/binding/MapperMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4023">
+          <caret line="224" selection-start-line="224" selection-end-line="224" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/target/classes/com/milo/dao/SetmealDao" />
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/CheckItemDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="107" lean-forward="true" selection-end-line="1" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/dao/CheckGroupDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/CheckGroupDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/resources/spring-redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-tx.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="15" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_common/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/spring-redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="16" lean-forward="true" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_jobs/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/constant/RedisConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-223">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_jobs/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_jobs/src/main/resources/spring-redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_jobs/src/main/resources/spring-jobs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_jobs/src/main/java/com/milo/jobs/ClearnImgJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/entity/PageResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_common/src/main/java/com/milo/entity/QueryPageBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_interface/src/main/java/com/milo/SetmealService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/java/com/milo/controller/SetmealController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/resources/com/milo/dao/SetmealDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/dao/SetmealDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/CheckGroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#2663#2664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_service_provider/src/main/java/com/milo/service/impl/SetmealServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health_parent/health_backend/src/main/webapp/pages/setmeal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="253" column="38" selection-start-line="253" selection-start-column="38" selection-end-line="253" selection-end-column="38" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

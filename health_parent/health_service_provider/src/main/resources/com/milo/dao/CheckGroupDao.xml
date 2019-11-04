@@ -13,4 +13,89 @@
     <insert id="addCheckItemRel" parameterType="map">
         insert into t_checkgroup_checkitem(checkgroup_id,checkitem_id) values (#{checkgroup_id},#{checkitem_id})
     </insert>
+
+
+    <!--根据条件分页查询-->
+    <resultMap id="checkGroupMap" type="checkGroup">
+        <id property="id" column="id"/>
+        <result property="code" column="code"/>
+        <result property="name" column="name"/>
+        <result property="helpCode" column="helpCode"/>
+        <result property="sex" column="sex"/>
+        <result property="remark" column="remark"/>
+        <result property="attention" column="attention"/>
+        <!--select属性用来关联一条sql语句，进行二次查询，column为查询的条件-->
+        <collection column="id" property="checkItems" ofType="checkItem" select="selectCheckItems">
+
+        </collection>
+    </resultMap>
+    <!--对第二条sql语句的结果进行映射-->
+    <resultMap id="checkItemMap" type="checkItem">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+    </resultMap>
+
+    <select id="queryCondition" parameterType="string" resultMap="checkGroupMap">
+       select * from t_checkgroup
+            <where>
+                <if test="value != null and value.length > 0">
+                    code = #{value} or name = #{value} or helpCode = #{value}
+                </if>
+            </where>
+    </select>
+    <!--关联查询的语句-->
+    <select id="selectCheckItems" parameterType="int" resultMap="checkItemMap">
+        SELECT id,NAME FROM t_checkitem , t_checkgroup_checkitem WHERE id = checkitem_id AND checkgroup_id = #{id}
+    </select>
+
+    <!--查询一个检查组的信息-->
+    <select id="findOne" parameterType="int" resultType="checkGroup">
+        select * from t_checkgroup where id = #{id}
+    </select>
+
+    <!--根据检查组的id查询检查项的id-->
+    <select id="findCheckitemIdsByCheckGroupId" parameterType="int" resultType="int">
+        select checkitem_id from t_checkgroup_checkitem where checkgroup_id = #{id}
+    </select>
+
+    <!--修改检查组-->
+    <update id="updateCheckGroup" parameterType="checkGroup">
+        update t_checkgroup
+        <set>
+            <if test="code != null">
+                code = #{code},
+            </if>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="helpCode != null">
+                helpCode = #{helpCode},
+            </if>
+            <if test="sex != null">
+                sex = #{sex},
+            </if>
+            <if test="remark != null">
+                remark = #{remark},
+            </if>
+            <if test="attention != null">
+                attention = #{attention},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--根据检查组的id删除检查组于检查项的关系-->
+    <delete id="deleteCheckItemIdAndCheckGroupId" parameterType="int">
+        delete from t_checkgroup_checkitem where checkgroup_id = #{id}
+    </delete>
+
+    <!--插入关系-->
+    <insert id="insertCondition" parameterType="map">
+        insert into t_checkgroup_checkitem(checkgroup_id,checkitem_id) values (#{checkGroupId},#{checkitemId})
+    </insert>
+
+    <!--查询所有-->
+    <select id="findAll" resultType="checkGroup">
+        select * from t_checkgroup
+    </select>
 </mapper>
